@@ -53,11 +53,8 @@ export default function ContactDetailsPage() {
       {data.subcategory && (
         <p><strong>Subcategory:</strong> {data.subcategory}</p>
       )}
-      {data.phone && <p><strong>Phone:</strong> {data.phone}</p>}
       <p><strong>Phone:</strong> {data.phone}</p>
-      {data.dateOfBirth && (
-        <p><strong>Date of Birth:</strong> {data.dateOfBirth}</p>
-      )}
+      <p><strong>Date of Birth:</strong> {data.dateOfBirth}</p>
 
       {user && (
         <div className="flex space-x-2 mt-4">

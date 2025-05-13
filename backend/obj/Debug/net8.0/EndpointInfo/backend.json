@@ -334,10 +334,12 @@
       "ContactUpdateRequest": {
         "required": [
           "categoryId",
+          "dateOfBirth",
           "email",
           "firstName",
           "lastName",
-          "password"
+          "password",
+          "phone"
         ],
         "type": "object",
         "properties": {
@@ -359,8 +361,8 @@
             "type": "string"
           },
           "phone": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "dateOfBirth": {
             "type": "string",
